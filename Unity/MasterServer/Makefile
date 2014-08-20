@@ -101,4 +101,4 @@ cleanall:
 	
 # Compile all RakNet cpp source files
 .cpp.o:
-	$(CC) -c -Wall -I$(INCLUDE) -I$(COMMON_INCLUDE) $(DEFINES) $< -o $@
+	$(CC) -c -Wall -Wno-narrowing -I$(INCLUDE) -I$(COMMON_INCLUDE) $(DEFINES) $< -o $@
